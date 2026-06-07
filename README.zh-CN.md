@@ -1,8 +1,26 @@
 # PDF2MD — PDF 转 Markdown 技能
 
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-D97757?logo=anthropic&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-Supported-008080?logo=latex&logoColor=white)
+
 [English README](README.md)
 
 一个 **Claude Code 技能**，能够将 PDF 文档精确复刻为带有 LaTeX 公式的 Markdown 格式。专为标准文本提取失败的 PDF 设计——自定义字体编码、嵌入式字体、扫描文档、以及公式密集的学术论文。
+
+## 快速开始
+
+```bash
+# 1. 安装
+git clone git@github.com:Chen-yuyang/pdf2md_skill.git
+cp -r pdf2md_skill ~/.claude/skills/pdf2md
+
+# 2. 在任意 Claude Code 对话中使用
+# 直接说：
+"Convert this PDF to markdown: ./paper.pdf"
+"PDF转markdown: ./homework.pdf"
+```
 
 ## 核心优势
 

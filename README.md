@@ -1,8 +1,26 @@
 # PDF2MD — PDF to Markdown Converter Skill
 
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-D97757?logo=anthropic&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-Supported-008080?logo=latex&logoColor=white)
+
 [中文版 README](README.zh-CN.md)
 
 A **Claude Code skill** that converts PDF documents into precisely reproduced Markdown with LaTeX formulas. Designed for PDFs where standard text extraction fails — custom font encodings, embedded fonts, scanned content, and formula-heavy academic documents.
+
+## Quick Start
+
+```bash
+# 1. Install
+git clone git@github.com:Chen-yuyang/pdf2md_skill.git
+cp -r pdf2md_skill ~/.claude/skills/pdf2md
+
+# 2. Use in any Claude Code conversation
+# Just say:
+"Convert this PDF to markdown: ./paper.pdf"
+"PDF转markdown: ./homework.pdf"
+```
 
 ## Key Differentiators
 
