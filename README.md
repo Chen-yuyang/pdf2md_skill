@@ -6,9 +6,9 @@ A **Claude Code skill** that converts PDF documents into precisely reproduced Ma
 
 ## Key Differentiators
 
-Unlike traditional PDF-to-Markdown tools (e.g., Microsoft MarkItDown, PyMuPDF text extraction), PDF2MD takes a **multimodal image-based approach**:
+Unlike traditional PDF-to-Markdown tools (e.g., PyMuPDF, pdfplumber, pdfminer), PDF2MD takes a **multimodal image-based approach**:
 
-| Feature | PDF2MD | Traditional Tools (MarkItDown, PyMuPDF, etc.) |
+| Feature | PDF2MD | Traditional Tools (PyMuPDF, pdfplumber, pdfminer, etc.) |
 |---|---|---|
 | **Core approach** | Convert pages to images, then use LLM multimodal vision to transcribe | Extract embedded text streams programmatically |
 | **LaTeX formulas** | Full LaTeX rendering with structural verification | Limited or no formula support |
@@ -266,6 +266,17 @@ If any verification script reports errors, the issues must be fixed and the scri
 | Chinese similar chars | "似然" (likelihood) vs "类似" (similar) | Understand context semantics |
 | Number format | 1,234 vs 1234 | Check comma separators |
 | Reference numbers | "式(3.4.22)" vs "式(3.4.23)" | Digit-by-digit comparison |
+
+## When to Use PDF2MD vs Traditional Tools
+
+| Scenario | Recommended Tool |
+|---|---|
+| Academic papers with formulas | **PDF2MD** |
+| Scanned documents | **PDF2MD** |
+| PDFs with custom/embedded fonts causing garbled text | **PDF2MD** |
+| Documents where table/diagram layout matters | **PDF2MD** |
+| Bulk conversion of simple, well-structured PDFs | Traditional tools (faster) |
+| PDFs with clean, extractable text streams | Traditional tools (sufficient) |
 
 ## License
 
